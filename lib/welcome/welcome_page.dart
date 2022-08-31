@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_dicoding/home/home_page.dart';
 // import 'package:slider_button/slider_button.dart';
 import 'package:slide_to_confirm/slide_to_confirm.dart';
 
@@ -113,7 +114,12 @@ class WelcomePage extends StatelessWidget {
                         fontSize: 15,
                       ),
                       text: ('Swipe to explore now'),
-                      onConfirmation: () {},
+                      onConfirmation: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => HomePage(),
+                        ),
+                      ),
                     ),
                   ),
                 ),
